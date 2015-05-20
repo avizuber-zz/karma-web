@@ -1,0 +1,77 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12-md">
+			<div class="feed-item" ng-repeat="post in postsList">
+				<div class="feed-item-left">
+					<div class="feed-item-left-top">
+						<div class="sash"></div>
+						<div class="author-avatar">
+							<span class="avatar">
+								<a href="#/view3"><i class="fa fa-user"></i></a>
+							</span>
+							<span class="user-ranking">Top {{post.post.user.rank}}%</span>
+						</div>
+						<div class="author-name">
+							<span>{{post.post.user.name}}</span>
+						</div>
+						<div class="category-hash">
+							<a href>#{{post.post.group}}</a>
+						</div>
+						<div class="answer-count">
+							<span>{{post.post.aCount}} Answers</span>
+						</div>
+					</div>
+				</div>
+				<div class="feed-item-right">
+					<div class="feed-item-item">
+						<span class="Q">Q:</span> {{post.post.text | limitTo:345}}... <a href="#/view2" class="read-more">Read More</a>
+					</div>
+					<div class="feed-item-controls">
+						<span class="refer">
+							<a href class="btn btn-default">
+								<i class="fa fa-star"></i>
+							</a>
+						</span>
+						<span class="refer">
+							<a href class="btn btn-default">
+								<i class="fa fa-user-plus"></i>
+							</a>
+						</span>
+						<span class="private-message">
+							<a href class="btn btn-default">
+								<i class="fa fa-envelope"></i>
+							</a>
+						</span>
+						<span class="answer">
+							<a href data-toggle="modal" data-target="#quickAnswer" class="btn btn-default">
+								<i class="fa fa-check-square-o"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="quickAnswer" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Help Alfred</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        	 <div class="form-group">
+        	 	<textarea class="form-control"></textarea>
+  			 </div>		
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Submit Answer</button>
+      </div>
+    </div>
+  </div>
+</div>

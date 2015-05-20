@@ -1,0 +1,241 @@
+/* app css stylesheet */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+  background:#f5f5f5;
+  color:#272727;
+}
+
+.navbar-default {
+  background: #4fb6bf;
+  border:none;
+  color:#fff;
+}
+
+.navbar-default a.navbar-brand {
+  color:#fff;
+}
+
+.navbar-default a.navbar-brand:hover {
+  color:#20646A;
+}
+
+.white, ul.white li, .navbar-default ul.white>li>a, p.white, a.white, h1.white, h2.white, h3.white, h4.white, h5.white, h6.white, .nav>li>a.white {
+  color:#fff;
+}
+
+a.white:hover,.nav>li>a.white:hover {
+  color:#20646A;
+}
+
+li.navbar-points {
+  background: #20646A;
+  height: 45px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.17);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #4fb6bf;
+  background-color: #20646A;
+}
+
+#ribbon {
+  padding: 0 0 10px 0;
+  position: absolute;
+  top: -0.25em;
+  height:58px;
+  width:60px;
+  padding:3px;
+}
+
+#ribbon.profile-ribbon {
+  top:-25px;
+}
+
+#ribbon div{
+  background: #20646A;
+  height: 55px;
+  width: 60px;
+  text-align: center;
+  margin-left: -63px;
+  padding: 3px;
+}
+
+#ribbon.profile-ribbon div {
+  background:#fff;
+  border:1px solid #20646A;
+  color:#20646A;
+}
+
+#ribbon div span{
+  display:block;
+}
+
+#ribbon div span.points-text{
+  font-size:.8em;
+}
+
+#ribbon divXafter {
+  border-left: 30px solid #20646A;
+  border-right: 30px solid #20646A;
+  border-bottom: 10px solid transparent;
+  bottom: 0;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  margin-left:-60px;
+}
+
+.navbar-default .nav-left>li>a:hover {
+  background:#20646A;
+  color:#fff;
+}
+
+.feed-item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  margin-bottom:20px;
+}
+
+.feed-item-left, .feed-item-right {
+  display:inline-block;
+  vertical-align: top;
+}
+
+.feed-item-left {
+  margin-right:15px;
+  padding-right:15px;
+  border-right:1px solid #e3e3e3;
+  display:table-cell;
+  min-width:100px;
+}
+
+.feed-item-right {
+  padding-left:15px;
+  display:table-cell;
+}
+
+.avatar {
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  width: 45px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+}
+
+.user-ranking {
+  display: block;
+  margin-top: -10px;
+  font-size: .6em;
+  background: #B7B7B7;
+  color: #fff;
+}
+
+.author-name span {
+  display:block;
+  margin-bottom:5px;
+}
+
+.feed-item-left-top {
+  text-align:center;
+}
+
+span.Q {
+  font-family: Georgia;
+  font-size: 1.4em;
+  color: #e3e3e3;
+  font-weight: bold;
+}
+
+.feed-item-item {
+  border-bottom: 1px dashed #e3e3e3;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.feed-item-controls {
+  text-align:right;
+}
+
+.asker-avatar {
+  width: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-top {
+  text-align:center;
+  position:relative;
+}
+
+.profile-avatar-wrapper {
+  width:90px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.answer-count span {
+  display:block;
+  padding:1px 2px;
+  border:1px solid #20646a;
+  border-radius:2px;
+  margin-top:15px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #20646a;
+  border-color: #20646a;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #20646a;
+  border-color: #20646a;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #20646a;
+  border-color: #20646a;
+}
+
+a {
+  color: #20646a;
+}
+
+@media (min-width: 768px) {
+  .menu-text {
+    display: none;
+  }
+}
