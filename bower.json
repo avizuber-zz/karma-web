@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "karma-web",
+  "description": "A front-end prototype for Karma in Angular",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/avizuber/karma-web",
   "license": "MIT",
   "private": true,
   "dependencies": {
